@@ -1,6 +1,6 @@
 package academy.belhard;
 
-import static academy.belhard.GameResult.NOT_FINISHED;
+import academy.belhard.logic.Game;
 
 public class Main {
 
@@ -14,19 +14,7 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        GameField gameField = new GameField();
-
-        boolean gamer = true;
-        while ( != NOT_FINISHED) {
-            Step step = new Step(gamer);
-
-            System.out.println("Ход игрока " + GamerSymbolUtil.convert(step.getGamer()));
-            step.fillStep();
-
-            gameField.fillCell(step.getGamer(), step.getRaw(), step.getCol());
-            gameField.printField();
-
-            gamer = !gamer;
-        }
+        Game game = new Game();
+        game.start();
     }
 }

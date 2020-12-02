@@ -1,4 +1,4 @@
-package academy.belhard;
+package academy.belhard.io;
 
 public interface PositionReader {
 

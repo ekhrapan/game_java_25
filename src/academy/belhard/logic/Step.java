@@ -1,4 +1,6 @@
-package academy.belhard;
+package academy.belhard.logic;
+
+import academy.belhard.io.PositionConsoleReader;
 
 public class Step {
     private int col;

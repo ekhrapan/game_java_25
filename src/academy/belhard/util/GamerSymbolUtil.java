@@ -1,4 +1,4 @@
-package academy.belhard;
+package academy.belhard.util;
 
 public class GamerSymbolUtil {
 
